@@ -1,1 +1,22 @@
+--> no se subirlo con java asi que lo subo CntrlC-V, aqui esta el codigo pero no el como se  estructura en clases 
+package PrimerasClases;
 
+public class Punto {
+	//variables ó atributos
+	int coordX;
+	int coordY;
+
+	//constructor
+	public Punto( int nuevacoordX, int nuevacoordY){
+		coordX=nuevacoordX;
+		coordY=nuevacoordY;
+	}
+	//metodos
+	float devuelveDistanciaOrigen() {
+		float distancia;
+		distancia=Math.sqrt(corrdX*coordX*+coordY*coordY);
+	return();
+	}
+	
+	
+}
