@@ -1,0 +1,58 @@
+clase Punto.java;
+package PrimerasClases;
+
+public class Punto {
+	//variables ó atributos
+	int coordX;
+	int coordY;
+
+	//constructor
+	public Punto( int nuevacoordX, int nuevacoordY){
+		coordX=nuevacoordX;
+		coordY=nuevacoordY;
+	}
+	//metodos
+	double devuelveDistanciaOrigen() {
+		double distancia;
+		distancia=Math.sqrt(coordX*coordX+coordY*coordY);
+	    return(distancia);
+	}
+	// metodos setter&getter:
+	//metodo setter: sirve para fijar el valor  de un atributo 
+	public int getCoordX() {
+		return coordX;
+	}
+	public void setCoordX(int coordX) {
+		this.coordX = coordX;
+	}
+	public int getCoordY() {
+		return coordY;
+	}
+	public void setCoordY(int coordY) {
+		this.coordY = coordY;
+	}
+	
+
+}
+--------------------------------------------------------------
+clase ManejaPuntos.java;
+package PrimerasClases;
+
+public class ManejaPuntos {
+
+	public static void main(String[] args) {
+		// Esta clase sirve para ver si si he pensado bien 
+		//la clase punto
+		int x=2 ;
+		double y=3.14;
+		char l= 'A' ;
+		boolean respuesta=true; // es una variable de F/V
+		String palabra;
+		Punto miPrimerPuntito;// declaro un objeto de la clase punto
+		miPrimerPuntito=new Punto(3,4);//instancio (utilizo su constructor para inicializarlo)
+		System.out.println("este punto dista del origen: ");
+		System.out.print(miPrimerPuntito.devuelveDistanciaOrigen());
+
+	}
+
+}
