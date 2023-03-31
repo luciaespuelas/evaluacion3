@@ -1,0 +1,89 @@
+clase Barco:
+
+package PrimerasClases.Ejercicios_Clases;
+
+public class Barco {
+
+	//atributos
+	private String nombreBarco;
+	private int tamano;
+	private int numeroPalos;
+	//constructor
+	public Barco(String nombreBarco, int tamano, int numeroPalos) {
+		super();
+		this.nombreBarco = nombreBarco;
+		this.tamano = tamano;
+		this.numeroPalos = numeroPalos;
+	}
+	//ejemplo de polimorfismo:vamos a sobrecargar el constructor
+	
+	public Barco(String nombreBarco) {
+		super();
+		this.nombreBarco = nombreBarco;
+	}
+	//metodos getter setter
+	public String getNombreBarco() {
+		return nombreBarco;
+	}
+
+	public void setNombreBarco(String nombreBarco) {
+		this.nombreBarco = nombreBarco;
+	}
+
+	public int getTamano() {
+		return tamano;
+	}
+
+	public void setTamano(int tamano) {
+		this.tamano = tamano;
+	}
+
+	public int getNumeroPalos() {
+		return numeroPalos;
+	}
+
+	public void setNumeroPalos(int numeroPalos) {
+		this.numeroPalos = numeroPalos;
+	}
+}
+
+clase BarcoVelasCuadradas;
+package PrimerasClases.Ejercicios_Clases;
+
+public class BarcoVelasCuadradas extends Barco {
+	private boolean tieneVelasCuadradas;
+	public BarcoVelasCuadradas(String nombreBarco, int tamano, int numeroPalos, boolean tieneVelasCuadradas) {
+		super(nombreBarco, tamano, numeroPalos);
+		this.tieneVelasCuadradas= tieneVelasCuadradas;
+
+		// TODO Auto-generated constructor stub
+	}
+	public boolean isTieneVelasCuadradas() {
+		return tieneVelasCuadradas;
+	}
+	public void setTieneVelasCuadradas(boolean tieneVelasCuadradas) {
+		this.tieneVelasCuadradas = tieneVelasCuadradas;
+	}
+
+}
+
+
+clase main ManejaBarcos,
+package PrimerasClases.Ejercicios_Clases;
+
+public class ManejaBarcos {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Barco miPrimerBarquito, miSegundoBarquito;
+		BarcoVelasCuadradas miBarquitoBebe;
+		miPrimerBarquito= new Barco("velero",12,2);
+		miSegundoBarquito= new Barco("bergantin");
+		System.out.println(miPrimerBarquito.getNombreBarco());
+		System.out.println(miSegundoBarquito.getNombreBarco());
+		miBarquitoBebe= new BarcoVelasCuadradas ("trirreme",10,1,true)
+	}
+	
+
+}
+
