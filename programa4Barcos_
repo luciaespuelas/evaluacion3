@@ -81,7 +81,7 @@ public class ManejaBarcos {
 		miSegundoBarquito= new Barco("bergantin");
 		System.out.println(miPrimerBarquito.getNombreBarco());
 		System.out.println(miSegundoBarquito.getNombreBarco());
-		miBarquitoBebe= new BarcoVelasCuadradas ("trirreme",10,1,true)
+		miBarquitoBebe= new BarcoVelasCuadradas ("trirreme",10,1,true);
 	}
 	
 
