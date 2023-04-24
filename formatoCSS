@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Energía Solar</title>
+	<style>
+		p {
+			font-family: Arial;
+			font-size: 11px;
+			text-align: justify;
+		}
+	</style>
+</head>
+<body>
+	<p>La <strong>energía solar</strong> es una fuente renovable de energía que utiliza la radiación del sol para generar electricidad, reduciendo la dependencia de combustibles fósiles y disminuyendo las emisiones de gases de efecto invernadero.</p>
+	<img src="energiasolar.jpg" align="middle" alt="Energía Solar">
+</body>
+</html>
