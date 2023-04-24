@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Energía Solar</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		p {
+			font-family: Arial;
+			font-size: 16px;
+			text-align: justify;
+			margin: 0;
+			padding: 0;
+		}
+
+		img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+			margin: 0 auto;
+			max-width: 100%;
+			height: auto;
+			width: 200px; /* Ancho fijo para mantener el tamaño original */
+		}
+
+		@media screen and (min-width: 600px) {
+			p {
+				font-size: 20px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<p>La <strong>energía solar</strong> es una fuente renovable de energía que utiliza la radiación del sol para generar electricidad, reduciendo la dependencia de combustibles fósiles y disminuyendo las emisiones de gases de efecto invernadero.</p>
+	<img src="energiasolar.jpg" alt="Energía Solar">
+</body>
+</html>
