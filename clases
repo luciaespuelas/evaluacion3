@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Clase Persona</title>
+</head>
+<body>
+  <label for="input-nombre">Nombre:</label>
+  <input type="text" id="input-nombre">
+  <br>
+  <label for="input-edad">Edad:</label>
+  <input type="number" id="input-edad">
+  <br>
+  <button id="boton-saludar">Saludar</button>
+  <br>
+  <textarea id="cuadro-texto-saludo" rows="4" cols="50"></textarea>
+
+  <script>
+    class Persona {
+      constructor(nombre, edad) {
+        this.nombre = nombre;
+        this.edad = edad;
+      }
+
+      saludar() {
+        return `Hola, mi nombre es ${this.nombre} y tengo ${this.edad} años.`;
+      }
+
+      cumplirAnios() {
+        this.edad++;
+        console.log(`¡Hoy cumplo ${this.edad} años!`);
+      }
+    }
+
+    const inputNombre = document.getElementById("input-nombre");
+    const inputEdad = document.getElementById("input-edad");
+    const botonSaludar = document.getElementById("boton-saludar");
+    const cuadroTextoSaludo = document.getElementById("cuadro-texto-saludo");
+
+    botonSaludar.addEventListener("click", () => {
+      const nombre = inputNombre.value;
+      const edad = parseInt(inputEdad.value);
+
+      const persona = new Persona(nombre, edad);
+      const saludo = persona.saludar();
+
+      cuadroTextoSaludo.textContent = saludo;
+    });
+  </script>
+</body>
+</html>
