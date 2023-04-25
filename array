@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guardar en array</title>
+</head>
+<body>
+	<form>
+		<label for="texto">Introduce el texto:</label>
+		<input type="text" id="texto" name="texto"><br>
+
+		<button type="button" onclick="guardarTexto()">Guardar</button><br><br>
+
+		<label for="numElementos">Número de elementos:</label>
+		<input type="text" id="numElementos" name="numElementos"><br>
+
+		<label for="elementos">Elementos:</label>
+		<input type="text" id="elementos" name="elementos"><br>
+	</form>
+
+	<script>
+		var textos = []; // Creamos un array vacío para almacenar los textos
+
+		function guardarTexto() {
+			var texto = document.getElementById("texto").value; // Obtenemos el valor del campo de entrada
+			textos.push(texto); // Añadimos el texto al array
+            document.getElementById("texto").value = ""
+			console.log(textos); // Mostramos el array en la consola
+		}
+
+		function mostrarElementos() {
+			var numElementos = textos.length; //longitud  del array
+			document.getElementById("numElementos").value = numElementos; // Mostramos el número de elementos en el cuadro de texto correspondiente
+
+			var elementos = textos.join(", "); // Unimos los elementos del array en una cadena separada por comas
+			document.getElementById("elementos").value = elementos; // Mostramos los elementos en el cuadro de texto correspondiente
+		}
+	</script>
+
+	<button type="button" onclick="mostrarElementos()">Mostrar elementos</button>
+</body>
+</html>
